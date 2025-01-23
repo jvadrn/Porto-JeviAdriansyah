@@ -1,10 +1,11 @@
 import qaimg1 from "../assets/img/playwright.png";
 import qaimg2 from "../assets/img/cypress.png";
 import qaimg3 from "../assets/img/robotfr.png";
+import jenkins from "../assets/img/jenkinslogo.png";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
+import arrow1 from "../assets/img/php.png";
+import arrow2 from "../assets/img/jslogo.png";
 import colorSharp from "../assets/img/color-sharp.png"
 
 export const Skills = () => {
@@ -32,13 +33,29 @@ export const Skills = () => {
     <section className="skill" id="skills">
         <div className="container">
             <div className="row">
-                <div className="col-12">
+                <div className="col">
+                    <div className="title-skill">
+                        <h2>Skill</h2>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div className="container">
+            <div className="row">
+                <div className="col">
                     <div className="skill-bx wow zoomIn">
-                        <h2>Skills</h2>
-                        <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider mt-5">
+                        <Carousel 
+                            arrows={false}
+                            responsive={responsive} 
+                            infinite={true} 
+                            autoPlay={true} 
+                            autoPlaySpeed={1500} 
+                            className="owl-carousel owl-theme skill-slider mt-5 mb-5"
+                        >
                             <div className="item">
                                 <img src={qaimg1} alt="Image" />
-                                <h5>Playwright</h5>
+                                <h5></h5>
                             </div>
                             <div className="item">
                                 <img src={qaimg2} alt="Image" />
@@ -46,29 +63,40 @@ export const Skills = () => {
                             </div>
                             <div className="item">
                                 <img src={qaimg3} alt="Image" />
-                                <h5>Robot Framework</h5>
+                                <h5></h5>
                             </div>
                             <div className="item">
-                                <img src={qaimg1} alt="Image" />
-                                <h5>Playwright</h5>
+                                <img src={jenkins} alt="Image" />
+                                <h5></h5>
                             </div>
                         </Carousel>
-                        <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider mt-5">
+                    </div>
+                </div>
+                <div className="col-12">
+                    <div className="skill-bx wow zoomIn">
+                        <Carousel 
+                            arrows={false}
+                            responsive={responsive} 
+                            infinite={true} 
+                            autoPlay={true} 
+                            autoPlaySpeed={1800} 
+                            className="owl-carousel owl-theme skill-slider mt-5"
+                        >
                             <div className="item">
-                                <img src={qaimg1} alt="Image" />
-                                <h5>Playwright</h5>
+                                <img src={arrow1} alt="Image" />
+                                <h5></h5>
                             </div>
                             <div className="item">
-                                <img src={qaimg2} alt="Image" />
+                                <img src={arrow2} alt="Image" />
                                 <h5></h5>
                             </div>
                             <div className="item">
                                 <img src={qaimg3} alt="Image" />
-                                <h5>Robot Framework</h5>
+                                <h5></h5>
                             </div>
                             <div className="item">
                                 <img src={qaimg1} alt="Image" />
-                                <h5>Playwright</h5>
+                                <h5></h5>
                             </div>
                         </Carousel>
                     </div>
@@ -76,6 +104,22 @@ export const Skills = () => {
             </div>
         </div>
         <img className="background-image-left" src={colorSharp} alt="Image" />
+        <div className="container">
+            <div className="row">
+                <div className="col-md-12">
+                    <div className="infoSkill-bx ">
+                        <div className="skillText">
+                        <p>Software Engeneer: HTML 5, CSS,JavaScript (React Js),Java, PHP (Laravel, CI), MySQL, 
+                        WordPress, Figma, Adobe InDesign, Microsoft Office</p>
+                        <p>Quality Assurance: Manual testing, Automation Testing (Cypress, Selenium, TestNG, 
+                        Playwright, Robot Framework), Jenkins (CI/CD Pipeline),Test scenario, Test case, Report, Git,
+                        GitHub, Google Sheets.</p>
+                        </div>     
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
   )
 }

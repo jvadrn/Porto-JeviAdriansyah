@@ -1,10 +1,6 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
-import Carousel from 'react-multi-carousel';
+
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
+import headerImg from "../assets/img/foto-porto-jv.jpeg";
 import colorSharp from "../assets/img/color-sharp.png"
 
 export const AboutMe = () => {
@@ -29,23 +25,39 @@ export const AboutMe = () => {
   };
 
   return (
-    <section className="aboutme" id="aboutme">
+    <section className="aboutme-bx" id="aboutme">
+      <div className='container'>
+        <div className='row'>
+          <div className='col'>
+            <div className='aboutme-title'>
+              <h2>About Me</h2>
+            </div>
+          </div>
+        </div>
+      </div>
         <div className="container">
             <div className="row">
-                <div className="col-12">
+                <div className="col-5">
                     <div className="aboutme-bx wow zoomIn">
-                        <h2>About Me</h2>
+                        <div className="aboutme-img">
+                        <img src={headerImg} alt="Header Img"/>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-6">
+                    <div className="aboutme-bx wow zoomIn" style={{ textAlign: 'justify' }}>
                         <div className="aboutme-text">
-                        <p>I am a passionate Software Quality Assurance (QA) professional with hands-on experience in both manual and automation testing. With a strong foundation in Software Engineering, I bring a deep understanding of how to ensure software reliability, functionality, and performance through rigorous testing practices.</p>
-                        <p>Throughout my academic journey, I actively participated in a variety of student organizations and projects. These experiences not only sharpened my technical abilities but also honed my communication, teamwork, and problem-solving skills. Collaborating with diverse teams allowed me to approach challenges from different perspectives, which I believe is key in the fast-evolving tech landscape.</p>
-                        <p>I am highly motivated to contribute my skills and expertise to the tech industry, particularly in Software Quality Assurance roles. My goal is to help create seamless and high-quality software products by leveraging both manual and automated testing techniques, ensuring end-users have the best possible experience.</p>
-                        
+                        <p>I am a fresh graduate from Politeknik Negeri Lampung, majoring in Information Technology, with a passion for Quality Assurance and Software Engineering. My academic journey and active involvement in student organizations have equipped me with strong communication, teamwork, and problem-solving skills</p>
+                        <p>I have hands-on experience as a Software Quality Assurance (SQA) professional, where I developed a deep understanding of software testing techniques, both manual and automated.</p>
+                        <p>With a strong desire to grow and contribute, I am eager to apply my skills to ensure software reliability and deliver seamless user experiences. I strive to bring value to every project I undertake, combining technical expertise with a commitment to excellence."</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div className='foto-porto'>
         <img className="background-image-left" src={colorSharp} alt="Image" />
+        </div>
     </section>
   )
 }
