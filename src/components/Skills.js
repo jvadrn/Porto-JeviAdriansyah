@@ -113,7 +113,7 @@ export const Skills = () => {
                         WordPress, Figma, Adobe InDesign, Microsoft Office</p>
                         <p>Quality Assurance: Manual testing, Automation Testing (Cypress, Selenium, TestNG, 
                         Playwright, Robot Framework), Jenkins (CI/CD Pipeline),Test scenario, Test case, Report, Git,
-                        GitHub, Google Sheets.</p>
+                        GitHub, Google Sheets.\</p>
                         </div>     
                     </div>
                 </div>
